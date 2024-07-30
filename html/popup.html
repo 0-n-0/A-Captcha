@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>A-Captcha 1.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 内联样式，用于覆盖任何潜在的问题 */
+        body {
+            width: 300px; /* 明确指定弹出窗口的宽度 */
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        #about-link {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #08d76c;
+        }
+        #about-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div id="popup-container">
+    <h1>A-Captcha 1.0</h1>
+    <h3>验证码自动填充</h3>
+    <button id="apiSettingsButton" class="popup-button">API 设置</button>
+    <button id="editRulesButton" class="popup-button">编辑规则</button>
+</div>
+<a id="about-link" href="https://github.com/your-repository" target="_blank">VIEW ON GITHUB</a>
+<script src="../js/popup.js"></script>
+</body>
+</html>
