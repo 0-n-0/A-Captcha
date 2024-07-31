@@ -5,17 +5,32 @@
     <title>A-Captcha 1.0</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* 内联样式，用于覆盖任何潜在的问题 */
+        /* 基本页面样式设置 */
         body {
-            width: 300px; /* 明确指定弹出窗口的宽度 */
-            margin: 0;
+            width: 200px; /* 明确指定弹出窗口的宽度 */
+            margin: 0 auto; /* 水平居中 */
             padding: 10px;
             box-sizing: border-box;
             position: relative;
+            font-family: Arial, sans-serif; /* 设定字体 */
+            padding-bottom: 40px; /* 增加底部内边距 */
+        }
+        .popup-button {
+            width: 100%; /* 按钮宽度填满容器 */
+            padding: 8px 0; /* 增加按钮的垂直填充 */
+            margin-top: 10px; /* 增加按钮间的间隔 */
+            background-color: #007bff; /* 设定一个更醒目的按钮颜色 */
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        .popup-button:hover {
+            background-color: #06b358; /* 鼠标悬浮时变化颜色 */
         }
         #about-link {
             position: absolute;
-            bottom: 10px;
+            bottom: 10px; /* 调整底部位置 */
             right: 10px;
             font-size: 12px;
             text-decoration: none;
@@ -27,13 +42,13 @@
     </style>
 </head>
 <body>
-<div id="popup-container">
-    <h1>A-Captcha 1.0</h1>
-    <h3>验证码自动填充</h3>
-    <button id="apiSettingsButton" class="popup-button">API 设置</button>
-    <button id="editRulesButton" class="popup-button">编辑规则</button>
-</div>
-<a id="about-link" href="https://github.com/0-n-0/A-Captcha" target="_blank">VIEW ON GITHUB</a>
-<script src="../js/popup.js"></script>
+    <div id="popup-container">
+        <h1>A-Captcha 1.0</h1>
+        <h3>验证码自动填充</h3>
+        <button id="apiSettingsButton" class="popup-button">API 设置</button>
+        <button id="editRulesButton" class="popup-button">编辑规则</button>
+    </div>
+    <a id="about-link" href="https://github.com/0-n-0/A-Captcha" target="_blank">VIEW ON GITHUB</a>
+    <script src="../js/popup.js"></script>
 </body>
 </html>
